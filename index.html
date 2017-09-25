@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Centros Culturais de Hortonlândia</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="style/pagina.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+   integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+   crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+   integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+   crossorigin=""></script>
+   <script src="script/map.js"></script>
+</head>
+<body onload="mapa()">
+<div>
+	<header>
+		<!--<center><img src="img/logo.jpg" width="25%"></center> -->
+		<nav id="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="informacoes.html">Informações</a></li>
+						<li><a href="contato.html">Fale Conosco</a></li>
+					</ul>
+				</nav>
+	</header>
+	<center><div id="mapid" style="width: 600px; height: 400px;"></div></center>
+	<footer id="rodape">
+		<p>Informações</p>
+	</footer>
+</div>
+</body>
+</html>
