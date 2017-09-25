@@ -9,12 +9,23 @@
 	border-bottom:3px solid #EDEDED;
 }
 #menu ul li a{
-	color: rgb(0,0,102);
+	color: rgba(0,0,102,0.8);
 }
 
 #rodape {
 	background-color: #EDEDED;
 	text-align: center;
 	padding: 2px 10px;
-	color: rgb(0,0,102);
+	color: rgba(0,0,102,0.8);
+}
+
+h1{
+	text-align: center;
+	color: rgba(0,0,102,0.8);
+}
+
+p{
+	text-align: center;
+	color: rgba(0,0,102,0.8);
+}
 }
