@@ -17,11 +17,15 @@
 <div>
 	<header>
 		<nav id="menu">
-		<!--<img src="img/logo.png" width="3%">-->
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="informacoes.html">Informações</a></li>
-						<li><a href="contato.html">Fale Conosco</a></li>
+						<li onmouseover="javascript:style.background='rgba(0,0,102,0.1)'" onmouseout="javascript:style.background=''"><a href="index.html">Home</a></li>
+						<li onmouseover="javascript:style.background='rgba(0,0,102,0.1)'" onmouseout="javascript:style.background=''"><a href="informacoes.html">Informações</a>
+							<ul id="submenu">
+								<li onmouseover="javascript:style.background='rgba(0,0,102,0.1)'" onmouseout="javascript:style.background=''"><a href="informacoes.html#projeto">Projeto</a></li>
+								<li onmouseover="javascript:style.background='rgba(0,0,102,0.1)'" onmouseout="javascript:style.background=''"><a href="informacoes.html#sobreautor">Sobre o Autor</a></li>
+							</ul>
+							</li>
+						<li onmouseover="javascript:style.background='rgba(0,0,102,0.1)'" onmouseout="javascript:style.background=''"><a href="contato.html">Fale Conosco</a></li>
 					</ul>
 				</nav>
 	</header>
@@ -30,7 +34,7 @@
 	</div>
 	<center><div id="mapid"></div></center>
 	<footer id="rodape">
-		<p>Desenvolvido para prefeitura de HortoLândia</p>
+		<p>Desenvolvido com o proposito de mapear os pontos turisticos de HortoLândia</p>
 	</footer>
 </div>
 </body>

@@ -3,35 +3,40 @@
 <head>
 	<title>Fale Conosco</title>
 	<link rel="stylesheet" type="text/css" href="style/pagina.css">
+	<script src="script/form.js" type="text/javascript"></script>
 </head>
 <body>
 <header>
-		<!--<center><img src="img/logo.jpg" width="25%"></center> -->
 		<nav id="menu">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="informacoes.html">Informações</a></li>
-						<li><a href="contato.html">Fale Conosco</a></li>
+						<li onmouseover="javascript:style.background='rgba(0,0,102,0.1)'" onmouseout="javascript:style.background=''"><a href="index.html">Home</a></li>
+						<li onmouseover="javascript:style.background='rgba(0,0,102,0.1)'" onmouseout="javascript:style.background=''"><a href="informacoes.html">Informações</a>
+							<ul id="submenu">
+								<li onmouseover="javascript:style.background='rgba(0,0,102,0.1)'" onmouseout="javascript:style.background=''"><a href="informacoes.html#projeto">Projeto</a></li>
+								<li onmouseover="javascript:style.background='rgba(0,0,102,0.1)'" onmouseout="javascript:style.background=''"><a href="informacoes.html#sobreautor">Sobre o Autor</a></li>
+							</ul>
+							</li>
+						<li onmouseover="javascript:style.background='rgba(0,0,102,0.1)'" onmouseout="javascript:style.background=''"><a href="contato.html">Fale Conosco</a></li>
 					</ul>
 				</nav>
 	</header>
 	<div>
 		<center><form id="formulario">
 					<label>Nome</label>
-					<input type="text" name="feedbacknome" placeholder="escreva seu nome..." required>
+					<input type="text" name="feedbacknome" placeholder="escreva seu nome..." onfocus="placeholder=''" required>
 					<br><br>
 					<label>E-mail</label>
-					<input type="text" name="feedbackemail" placeholder="escreva seu e-mail..." required>
+					<input type="text" name="feedbackemail" placeholder="escreva seu e-mail..." onfocus="placeholder=''" required>
 					<br><br>
 					<label>Comentários</label><br>
-					<textarea rows="3" cols="60" name="feedbackcomentariosgerais" placeholder="escreva um comentário...">
+					<textarea rows="3" cols="60" name="feedbackcomentariosgerais" placeholder="escreva um comentário..." onfocus="placeholder=''" required>
 					</textarea>
 					<br><br>
-					<input type="button" value="Enviar" name="enviar">
+					<input type="button" value="Enviar" name="enviar" onclick="foi();">
 				</form></center>
 	</div>
 	<footer id="rodape">
-		<p>Desenvolvido para prefeitura de HortoLândia</p>
+		<p>Desenvolvido com o proposito de mapear os pontos turisticos de HortoLândia</p>
 	</footer>
 </body>
 </html>
